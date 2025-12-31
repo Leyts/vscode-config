@@ -1,0 +1,67 @@
+{
+    "[jsonc]": {
+        "files.insertFinalNewline": true
+    },
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true
+    },
+    "catppuccin.accentColor": "flamingo",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontSize": 18,
+    "editor.glyphMargin": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.smoothScrolling": true,
+    "explorer.autoReveal": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.ruff_cache": true
+    },
+    "git-graph.repository.commits.loadMore": 300,
+    "github.copilot.enable": {
+        "*": false,
+        "markdown": false,
+        "plaintext": false,
+        "scminput": false
+    },
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "python.useEnvironmentsExtension": true,
+    "search.exclude": {
+        "**/*.lock": true
+    },
+    "security.workspace.trust.enabled": false,
+    "sqltools.format": {
+        "linesBetweenQueries": "preserve"
+    },
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.smoothScrolling": true,
+    "update.showReleaseNotes": false,
+    "window.titleBarStyle": "custom",
+    "workbench.colorCustomizations": {
+        "terminal.selectionBackground": "#e26cffcb"
+    },
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.list.smoothScrolling": true,
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false
+}
