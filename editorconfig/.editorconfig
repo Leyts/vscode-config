@@ -11,8 +11,8 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.sh]
+[*.{env,sh}]
 end_of_line = lf
 
-[*.yaml]
+[*.{yaml,yml}]
 indent_size = 2
