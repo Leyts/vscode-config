@@ -1,0 +1,26 @@
+{
+    "recommendations": [
+        "alexcvzz.vscode-sqlite",
+        "catppuccin.catppuccin-vsc",
+        "charliermarsh.ruff",
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "github.copilot",
+        "github.copilot-chat",
+        "mhutchie.git-graph",
+        "miguelsolorio.fluent-icons",
+        "ms-azuretools.vscode-containers",
+        "ms-azuretools.vscode-docker",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.vscode-python-envs",
+        "ms-vscode-remote.remote-wsl",
+        "peterfh.linesinfostatusbar",
+        "pkief.material-icon-theme",
+        "redhat.vscode-yaml",
+        "tamasfe.even-better-toml",
+        "timonwong.shellcheck",
+        "yzhang.markdown-all-in-one"
+    ]
+}

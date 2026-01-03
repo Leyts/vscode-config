@@ -1,6 +1,17 @@
 {
+    "[dockercompose]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true
+    },
     "[jsonc]": {
         "files.insertFinalNewline": true
+    },
+    "[markdown]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.markdownlint": "explicit"
+        },
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true
     },
     "[python]": {
         "editor.codeActionsOnSave": {
@@ -15,6 +26,109 @@
         "editor.formatOnSave": true
     },
     "catppuccin.accentColor": "flamingo",
+    "chat.implicitContext.suggestedContext": false,
+    "chat.tools.terminal.autoApprove": {
+        "/^column\\b.*-c\\s+[0-9]{4,}/": false,
+        "/^Compare-[a-z0-9]/i": true,
+        "/^date\\b.*(-s|--set)\\b/": false,
+        "/^find\\b.*-(delete|exec|execdir|fprint|fprintf|fls|ok|okdir)\\b/": false,
+        "/^Format-[a-z0-9]/i": true,
+        "/^git -C \"c:/Users/Leyts/workspace/repos/vscode-config\" diff --cached --unified=3 --diff-algorithm=histogram --no-color$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^git branch\\b.*-(d|D|m|M|-delete|-force)\\b/": false,
+        "/^Measure-[a-z0-9]/i": true,
+        "/^Select-[a-z0-9]/i": true,
+        "/^Sort-[a-z0-9]/i": true,
+        "/^sort\\b.*-(o|S)\\b/": false,
+        "/^tree\\b.*-o\\b/": false,
+        "basename": true,
+        "cat": true,
+        "cd": true,
+        "chmod": false,
+        "chown": false,
+        "cmp": true,
+        "column": true,
+        "curl": false,
+        "cut": true,
+        "date": true,
+        "dd": false,
+        "del": false,
+        "df": true,
+        "dirname": true,
+        "du": true,
+        "echo": true,
+        "erase": false,
+        "eval": false,
+        "file": true,
+        "find": true,
+        "findstr": true,
+        "Get-ChildItem": true,
+        "Get-Content": true,
+        "Get-Date": true,
+        "Get-Location": true,
+        "Get-Random": true,
+        "git branch": true,
+        "git diff": true,
+        "git grep": true,
+        "git log": true,
+        "git show": true,
+        "git status": true,
+        "grep": true,
+        "head": true,
+        "iex": false,
+        "Invoke-Expression": false,
+        "Invoke-RestMethod": false,
+        "Invoke-WebRequest": false,
+        "irm": false,
+        "iwr": false,
+        "Join-Path": true,
+        "jq": false,
+        "kill": false,
+        "ls": true,
+        "nl": true,
+        "ps": false,
+        "pwd": true,
+        "rd": false,
+        "readlink": true,
+        "realpath": true,
+        "Remove-Item": false,
+        "ri": false,
+        "rm": false,
+        "rmdir": false,
+        "Set-Acl": false,
+        "Set-ItemProperty": false,
+        "sleep": true,
+        "sort": true,
+        "sp": false,
+        "Split-Path": true,
+        "spps": false,
+        "Start-Sleep": true,
+        "stat": true,
+        "Stop-Process": false,
+        "tail": true,
+        "taskkill": false,
+        "taskkill.exe": false,
+        "top": false,
+        "tr": true,
+        "tree": true,
+        "wc": true,
+        "wget": false,
+        "Where-Object": true,
+        "which": true,
+        "Write-Host": true,
+        "Write-Output": true,
+        "xargs": false
+    },
+    "chat.tools.terminal.terminalProfile.windows": {
+        "args": [],
+        "env": {
+            "COPILOT": "1"
+        },
+        "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    },
+    // "chat.tools.terminal.outputLocation": "none",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.fontSize": 18,
     "editor.glyphMargin": false,
@@ -30,15 +144,30 @@
         "**/.ruff_cache": true
     },
     "git-graph.repository.commits.loadMore": 300,
+    "git.allowForcePush": true,
+    "git.confirmForcePush": false,
+    "git.confirmSync": false,
+    "git.defaultCloneDirectory": "${workspaceFolder}/repos",
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "file": "github/prompts/copilot-commit-message-instructions.md"
+        }
+    ],
     "github.copilot.enable": {
         "*": false,
         "markdown": false,
         "plaintext": false,
-        "scminput": false
+        "scminput": false,
+        "terminal": false
     },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "markdown.extension.showActionButtons": true,
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.hidesExplorerArrows": true,
+    // "python.analysis.typeCheckingMode": "basic",
+    "python.defaultInterpreterPath": "c:\\Users\\Leyts\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
     "python.useEnvironmentsExtension": true,
+    // "python.terminal.activateEnvInCurrentTerminal": true,
     "search.exclude": {
         "**/*.lock": true
     },
@@ -47,9 +176,19 @@
         "linesBetweenQueries": "preserve"
     },
     "telemetry.telemetryLevel": "off",
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "docker-desktop"
+    ],
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.fontFamily": "Fira Code",
-    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    // "terminal.integrated.fontLigatures.enabled": true,
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.smoothScrolling": true,
     "update.showReleaseNotes": false,
